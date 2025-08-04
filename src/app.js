@@ -13,4 +13,8 @@ const app = express();
 app.use(express.json())
 routes(app);
 
+app.use((erro, req, res, next) => {
+  res.status(500).send({ message: "Erro interno do servidor"});
+});
+
 export default app
