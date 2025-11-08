@@ -2,7 +2,7 @@
 import NaoEncontrado from "../erros/NaoEncontrado.js";
 import RequisicaoIncorreta from "../erros/RequisiçãoIncorreta.js";
 import ErroValidacao from "../erros/ErroValidacao.js";
-import autores from "../models/Autor.js";
+import { autores } from "../models/index.js";
 import mongoose from "mongoose";
 
 class AutorController {
